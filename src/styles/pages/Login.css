@@ -1,0 +1,99 @@
+/* 
+    Estilos de la pagina de inicio de sesion.
+*/
+
+
+/* Estila el contenedor principal. Se establece como una tarjeta centrada. */
+.login-page {
+    background-color: var(--color-card);
+    border-radius: 20px;
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icono de huella en la parte superior de la tarjeta. */
+.login-icon {
+    font-size: 48px;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+/* Define los estilos de fuente del titulo. */
+.login-page h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* Define los estilos de fuente del subtitulo. */
+.login-subtitle{
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 32px;
+}
+
+/* Formulario - campos y boton de envio. */
+
+/* Establece los espacios del formulario. Define la direccion
+de sus componentes y el espaciado entre ellos. */
+.login-page form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Define el estilo del boton de submit ubicado en la parte
+inferior de la tarjeta. Define estilos de fuente y de color. */
+.login-page button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+/* Define el hover del boton submit. */
+.login-page button[type="submit"]:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Modifica el estilo de los parrafos en la tarjeta. */
+.login-page > p {
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+/* Define los estilos de los links dentro de parrafos. */
+.login-page > p a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Define el estilo hover de un link dentro de un parrafo.*/
+.login-page > p a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+}
+
+/* Establece un color y estilo de fuente para la muestra de un error. */
+.error-message {
+    color: var(--color-error);
+    font-size: 13px;
+    text-align: center;
+}
